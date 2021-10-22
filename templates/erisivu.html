@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title> Super Geocoder </title>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script src="static/myFunction.js" type="text/javascript"></script>
+  <link href="../static/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=1280, initial-scale=1">
+  </head>
+  <body>
+    </div> 
+    <div  class="container">
+      <div class="dropdown">
+        <button onclick="myFunction()" src="myFunction.js" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="/">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div> 
+      <div>
+      
+    </div>
+        <form action='erisivu' method="POST">
+          <input type="text" name="vastaus" required/>
+          <button type="text"> Submit </button>
+          <button type="btn" onclick="Refresh();">Päivitä</button>
+        </form>
+      <div id="refresh" class="output">
+        {{text|safe}}
+      </div>
+  </div>
+
+  <script>function Refresh() {
+     $('#refresh').load(location.href + " #refresh");
+  }</script>
+  </body>
+</html>
