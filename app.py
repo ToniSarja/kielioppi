@@ -117,7 +117,7 @@ def vastaa():
             data=Data(0,"Genetiivi",user)
             db.session.add(data)
             db.session.commit()
-            return render_template('sub.html', text = 'Virhe!',teksti = kysymykset)
+            return render_template('sub.html', text = 'Virhe!')
 
 
 
