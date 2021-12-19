@@ -1,0 +1,15 @@
+{
+    "разов":{"vinkki":"Sana ei saa päätettä monikon genetiivissä"}, 
+    "годов":{"vinkki":"Sanalla on erivartaloinen monikon genetiivi"},  
+    "людей":{"vinkki":"Numeroiden 5 ja suurempien kanssa käytetään sanan perusmuotoa"}, 
+    "боеца":{"vinkki":"Sanan taivutusvartalo muuttuu taivutettaessa ё -> й"},  
+    "любимого моего салата":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}, 
+    "хорошего парня":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}, 
+    "большого помидора":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"},  
+    "крупного проекта":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}, 
+    "реализованного проектов":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}, 
+	"одинакового рисунка ":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}, 
+	"наградного номинации":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"},  
+	"подобного документа":{"vinkki":"Nominatiivissa adjektiivit taipuvat monikon genetiivissä numeroiden kanssa. Jos numero on pienempi kuin 5, substantiivi taipuu yksikön genetiivissä"}
+
+}

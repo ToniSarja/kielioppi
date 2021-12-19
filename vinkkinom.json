@@ -1,0 +1,19 @@
+{
+    "мяча": {"vinkki":"Sana on suvultaan maskuliini"},
+    "свобод": {"vinkki":"Sana on a-vokaaliin päättyvä feminiini"},
+    "руч": {"vinkki":"Sana on a-vokaaliin päättyvä feminiini, jonka vartaloon lisätään lausumista helpottava a-vokaali"},
+    "матер":{"vinkki":"Sanalla on poikkeuksellinen taivutusvartalo. Pehmeään merkkiin ь päättyvä feminiini"},
+    "матера":{"vinkki":"Sanalla on poikkeuksellinen taivutusvartalo. Pehmeään merkkiin ь päättyvä feminiini"},
+    "дяда":{"vinkki":"Sanalla on pehmeä vartalo, я-päätteinen nominatiivi"},
+    "дожд":{"vinkki":"Sana päättyy pehmeään merkkiin ь"},
+    "времен":{"vinkki":"мя-päätteinen neutri"},
+    "песн":{"vinkki":"я-päätteinen feminiini"},
+    "брать":{"vinkki":"Yksikön nominatiivissa sana ei pääty pehmeään merkkiin ь"},
+    "друзь":{"vinkki":"Yksikössä kova vartalo г. Yksikön nominatiivissa sana ei pääty pehmeään merkkiin ь"},
+    "сыновь":{"vinkki":"Sanalla on poikkeuksellinen taivutusvartalo, vrt. дочь ja мать"},
+    "англичан":{"vinkki":"Sana saa yksikössä ИН-päätteen"},
+    "цвет":{"vinkki":"Sana saa yksikö ок-päätteen erotuksena sanasta цвет (väri)"},
+    "хозяев":{"vinkki":"Sanalla on poikkeuksellinen taivutusvartalo"},
+    "кресл":{"vinkki":"o-päätteinen neutri"},
+    "здания":{"vinkki":"e-päätteinen neutri"}
+}

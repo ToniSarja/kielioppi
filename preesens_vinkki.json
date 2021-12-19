@@ -1,0 +1,30 @@
+{
+    "сиду":{"vinkki":"Huomaa konsonanttimuutos taivutettaessa д/ж"},
+	"писаю":{"vinkki":"Huomaa taivutusvartalon muutos taivutettaessa писа-/пиш- "}, 
+    "писают":{"vinkki":"Huomaa taivutusvartalon muutos taivutettaessa писа-/пиш- "}, 
+    "писает":{"vinkki":"Huomaa taivutusvartalon muutos taivutettaessa писа-/пиш- "}, 
+    "бру":{"vinkki":"Huomaa taivutusvartalon muutos taivutettaessa бра-/бер-"}, 
+    "брут":{"vinkki":"Huomaa taivutusvartalon muutos taivutettaessa бра-/бер-"}, 
+    "слушаете":{},
+	"звоню":{}, 
+    "звонят":{}, 
+    "смотрят":{}, 
+    "смотрю":{}, 
+    "получаю":{}, 
+    "встречает":{},
+	"помогает":{},
+	"говорю":{},
+	"отвечаешь":{},
+	"ловлю":{},
+	"делаю":{},
+	"носу":{"vinkki":"Huomaa konsonanttimuutos taivutettaessa ensimmäisessä persoonassa с/ш"},
+	"играет":{},
+	"вижу":{"vinkki":"Huomaa konsonanttimuutos taivutettaessa д/ж"},
+	"видет":{"vinkki":"Taivutettaessa -ит-pääte"},
+	"пробовает":{"vinkki":"-ова- putoaa pois persoonataivutuksessa ja -у-pääte tulee tilalle"},
+	"рисовает":{"vinkki":"-ова- putoaa pois persoonataivutuksessa ja -у-pääte tulee tilalle"},
+	"танцеваю":{"vinkki":"-ева- putoaa pois persoonataivutuksessa ja -у-pääte tulee tilalle"},
+	"покупаю":{}
+
+
+}

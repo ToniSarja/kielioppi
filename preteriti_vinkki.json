@@ -1,0 +1,23 @@
+{
+
+    "смол":{"vinkki":"Verbin preteriti muodostetaan pudottamalla чь-pääte pois ja lisäämällä г-pääte"}, 
+    "пришел":{"vinkki":"Verbillä on oma preteritimuoto, jota ei muodosteta infinitiivistä"}, 
+    "пришёл":{"vinkki":"Verbillä on oma preteritimuoto, jota ei muodosteta infinitiivistä"}, 
+    "перерастила":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois. A muuttuu taivutuksessa O-vokaaliin"}, 
+    "нёстил":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois"}, 
+    "нестил":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois"}, 
+    "нестила":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois ja lisäämällä -ла"},
+	"привыкнули":{"vinkki":"Verbin monikon preteriti muodostetaan pudottamalla нуть-pääte pois ja lisäämällä -ли"},
+	"привыкнула":{"vinkki":"Verbin preteriti muodostetaan pudottamalla нуть-pääte pois ja lisäämällä -ла"},
+	"лёл":{"vinkki":"Verbin preteriti muodostetaan pudottamalla чь-pääte pois ja lisäämällä г-pääte"},
+	"лел":{"vinkki":"Verbin preteriti muodostetaan pudottamalla чь-pääte pois ja lisäämällä г-pääte"},
+	"умерела":{"vinkki":"Verbin feminiinin preteriti muodostetaan pudottamalla еть-pääte pois ja lisäämällä -ла"},
+	"умерел":{"vinkki":"Verbin preteriti muodostetaan pudottamalla еть-pääte pois"},
+	"исчезнул":{"vinkki":"Verbin preteriti muodostetaan pudottamalla нуть-pääte pois"},
+	"вёс":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois. Preteritin pääte on л"},
+	"вестил":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois. Preteritin pääte on л"},
+	"везтил":{"vinkki":"Verbin preteriti muodostetaan pudottamalla ти-pääte pois"}
+
+
+
+}

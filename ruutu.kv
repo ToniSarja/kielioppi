@@ -1,0 +1,2115 @@
+<Osio>:
+    GridLayout:
+        cols: 1
+        padding: 15, 15
+        spacing: 20, 20
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Kyrilliset aakkoset'
+            on_press: 
+                root.valikko2()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Substantiivit'
+            on_press: 
+                root.valikko()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            on_press: 
+                root.valikko4()
+                root.manager.transition.direction = 'left'
+            text: 'Adjektiivit'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            on_press:
+                root.valikko3()
+                root.manager.transition.direction = 'left'
+            text: 'Verbit'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Pronominit'
+            on_press: 
+                root.valikko5()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            on_press:
+                root.valikko6()
+                root.manager.transition.direction = 'left'
+            text: 'Lukusanat'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            on_press:
+                root.valikko7()
+                root.manager.transition.direction = 'left'
+            text: 'Tilastot'
+            background_color: 1, 1, 1, 0
+            
+<Subosio>:
+    GridLayout:
+        cols: 1
+        padding: 15, 15
+        spacing: 20, 20
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Päävalikko'
+            on_press: 
+                root.back() 
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Nominatiivi'
+            on_press:
+                root.yksnom()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Genetiivi'
+            on_press:
+                root.gen()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Akkusatiivi'
+            on_press:
+                root.akk()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Datiivi'
+            on_press:
+                root.dat()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Instrumentaali'
+            on_press:
+                root.ins()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Prepositionaali'
+            on_press:
+                root.prep()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+
+<Adjektiivit>:
+    GridLayout:
+        cols: 1
+        padding: 15, 15
+        spacing: 20, 20
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Päävalikko'
+            on_press: 
+                root.back() 
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Komparatiivi'
+            on_press:
+                root.komp()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Superlatiivi'
+            on_press:
+                root.super()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Akkusatiivi'
+            on_press:
+                root.akkadj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Genetiivi'
+            on_press:
+                root.genadj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Datiivi'
+            on_press:
+                root.datadj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Instrumentaali'
+            on_press:
+                root.insadj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Prepositionaali'
+            on_press:
+                root.prepadj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Lyhyet adjektiivit'
+            on_press:
+                root.lyhyet()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+
+<Verbiosio>:
+    GridLayout:
+        cols: 1
+        padding: 15, 15
+        spacing: 20, 20
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Päävalikko'
+            on_press: 
+                root.back() 
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Aspekti'
+            on_press:
+                root.asp()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Persoonamuodot'
+            on_press:
+                root.per()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Preesens'
+            on_press:
+                root.prees()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Preteriti'
+            on_press:
+                root.pret()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Futuuri'
+            on_press:
+                root.fut()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Infinitiivi'
+            on_press:
+                root.inf()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Imperatiivi'
+            on_press:
+                root.imp()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Konditionaali'
+            on_press:
+                root.kond()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'СЯ-verbit'
+            on_press:
+                root.sja()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Быть'
+            on_press:
+                root.byt()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Liikeverbit'
+            on_press:
+                root.liike()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Gerundi'
+            on_press:
+                root.ger()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Partisiipit'
+            on_press:
+                root.part()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            size_hint: 0.1, 0.1
+            text: 'Passiivi'
+            on_press:
+                root.pas()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+
+
+<Kyrilliset>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 1
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back() 
+                    root.manager.transition.direction = 'right'
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Paina tästä'
+                on_press: root.kysykyr()
+                on_release: root.clearkyr()
+                background_color: 6, 6, 6, 0.1
+            Label:
+                id: kyskyr
+                text:''
+            TextInput:
+                id: vastauskyr
+                hint_text: 'Translitteroi sanat latinalaisille kirjaimille'
+            ProgressBar: 
+                id: edkyr
+                min: 0
+                max: 35
+            Button:
+                text: "Tarkista"
+                on_press: root.vastaakyr(root.ids.vastauskyr.text,root.ids.edkyr.value)
+                background_color: 6, 6, 6, 0.1
+            Label:
+                id: tekstikyr
+                text: ""
+            Label:
+                id: oikeatkyr
+                text: ""
+ 
+<Pronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 1
+        Button:
+            text: 'Päävalikko'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Persoonapronominit'
+            on_press: 
+                root.perpro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Demonstratiivipronominit'
+            on_press:
+                root.dempro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Kysymyspronominit'
+            on_press:
+                root.kyspro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Kieltopronominit'
+            on_press:
+                root.kielpro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Indefiniittipronominit'
+            on_press:
+                root.indpro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Relatiivipronominit'
+            on_press:
+                root.relpro()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0   
+
+<Lukusanat>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 1
+        Button:
+            text: 'Päävalikko'
+            padding: 15, 15
+            spacing: 20, 20
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Perusluvut'
+            padding: 15, 15
+            spacing: 20, 20
+            on_press:
+                root.perus()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Kollektiiviluvut'
+            padding: 15, 15
+            spacing: 20, 20
+            on_press:
+                root.kol()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            text: 'Järjestysluvut'
+            padding: 15, 15
+            spacing: 20, 20
+            on_press:
+                root.jarj()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+
+<Yksmon>:
+    GridLayout:
+        cols: 1
+        padding: 15, 15
+        spacing: 20, 20
+        Button:
+            padding: 15, 15
+            spacing: 20, 20
+            size_hint: 0.1, 0.1
+            text: 'Substantiivit'
+            on_press: 
+                root.valikko() 
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Button:
+            padding: 15, 15
+            spacing: 20, 20
+            size_hint: 0.1, 0.1
+            text: 'Yksikkö'
+            on_press:
+                root.nomi()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+        Button:
+            padding: 15, 15
+            spacing: 20, 20
+            size_hint: 0.1, 0.1
+            text: 'Monikko'
+            on_press:
+                root.nommon()
+                root.manager.transition.direction = 'left'
+            background_color: 1, 1, 1, 0
+
+<Nominatiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Kirjoita näiden taivutettujen sanojen nomini-muoto'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<NominatiiviMON>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Muodosta monikkomuoto näistä nominimuodoista'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Akkusatiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 1
+            GridLayout:
+                cols: 2
+                Button:
+                    text: 'Takaisin valikkoon'
+                    on_press: 
+                        root.back()
+                        root.manager.transition.direction = 'right'
+                    size_hint: 0.1, 0.1
+                    background_color: 1, 1, 1, 0
+                Button:
+                    text: 'Kielioppi'
+                    on_press: 
+                        root.kielioppisivu()
+                    size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Genetiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 52
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Datiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Instrumentaali>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Prepositionaali>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Aspekti>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols: 2
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                size_hint: 0.1, 0.1
+                background_color: 1, 1, 1, 0
+            Button:
+                text: 'Kielioppi'
+                on_press: 
+                    root.kielioppisivu()
+                size_hint: 0.1, 0.1
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Persoonamuodot>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Preesens>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Preteriti>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Futuuri>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Infinitiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Imperatiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Konditionaali>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Sjaverbit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Byt>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Liikeverbit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Gerundi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Partisiippi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Passiivi>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Persoonapronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Demonstratiivipronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Kysymyspronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Indefiniittipronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Kieltopronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+
+<Relatiivipronominit>:
+    GridLayout:
+        cols: 1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Komparatiivi>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Superlatiivi>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<AkkusatiiviADJ>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<GenetiiviADJ>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<DatiiviADJ>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+            
+<InstrumentaaliADJ>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+            
+<PrepositionaaliADJ>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Lyhyet>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Perusluvut>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Kollektiiviluvut>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+        Label:
+            id: oikeatsub
+            text: ''
+
+<Jarjestysluvut>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1
+        Button:
+            text: 'Takaisin valikkoon'
+            on_press: 
+                root.back()
+                root.manager.transition.direction = 'right'
+            background_color: 1, 1, 1, 0
+        Label:
+            text: ''
+        Button:
+            text: 'Paina tästä'
+            on_press: root.kysy()
+            on_release: root.clear()
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: kys
+            text:''
+        TextInput:
+            id: vastaus
+            hint_text: 'Taivuta annetussa sijamuodossa'
+        ProgressBar: 
+            id: edsub
+            min: 0
+            max: 35
+        Button:
+            text: "Tarkista"
+            on_press: root.vastaa(root.ids.vastaus.text,root.ids.edsub.value)
+            background_color: 6, 6, 6, 0.1
+        Label:
+            id: teksti
+            text: ""
+
+
+<Tilastot>:
+    GridLayout:
+        cols:1
+        GridLayout:
+            cols:1   
+            Button:
+                text: 'Edistyminen'
+                on_press: root.pistenappi()
+            Button:
+                text: 'Ennuste'
+                on_press: root.koneoppii()
+            Label:
+                id: kone
+                text: ""
+            Label:
+                id: oikeinvirhe
+                text: ""
+            Button:
+                text: 'Takaisin valikkoon'
+                on_press: 
+                    root.back()
+                    root.manager.transition.direction = 'right'
+                                
+                
+
+
+<RootWidget>:
+    Osio:
+        name: 'osiot'
+    Subosio:
+        name: 'subosio'
+    Verbiosio:
+        name: 'verbiosio'
+    Pronominit:
+        name: 'pronosio'
+    Kyrilliset:
+        name: 'kyr'
+    Adjektiivit:
+        name: 'adjosio'
+    Pronominit:
+        name: 'pron'
+    Lukusanat:
+        name: 'luku'
+    Nominatiivi:
+        name: 'nomi'
+    Akkusatiivi:
+        name: 'akk'
+    Genetiivi:
+        name: 'gen'
+    Datiivi:
+        name: 'dat'
+    Instrumentaali:
+        name: 'ins'
+    Prepositionaali:
+        name: 'prep'
+    Aspekti:
+        name: 'asp'
+    Persoonamuodot:
+        name: 'per'
+    Preesens:
+        name: 'prees'
+    Preteriti:
+        name: 'pret'
+    Futuuri:
+        name: 'fut'
+    Infinitiivi:
+        name: 'inf'
+    Imperatiivi:
+        name: 'imp'
+    Konditionaali:
+        name: 'kond'
+    Sjaverbit:
+        name: 'sja'
+    Byt:
+        name: 'byt'
+    Liikeverbit:
+        name: 'liike'
+    Gerundi:
+        name: 'ger'
+    Partisiippi:
+        name: 'part'
+    Passiivi:
+        name: 'pas'
+    Persoonapronominit:
+        name: 'perpro'
+    Demonstratiivipronominit:
+        name: 'dempro'
+    Kysymyspronominit:
+        name: 'kyspro'
+    Indefiniittipronominit:
+        name: 'indpro'
+    Kieltopronominit:
+        name: 'kielpro'
+    Relatiivipronominit:
+        name: 'relpro'
+    AkkusatiiviADJ:
+        name: 'akkadj'
+    GenetiiviADJ:
+        name: 'genadj'
+    DatiiviADJ:
+        name: 'datadj'
+    InstrumentaaliADJ:
+        name: 'insadj'
+    PrepositionaaliADJ:
+        name: 'prepadj'
+    Komparatiivi:
+        name: 'komp'
+    Superlatiivi:
+        name: 'super'
+    Lyhyet:
+        name: 'lyhyet'
+    Perusluvut:
+        name: 'perus'
+    Kollektiiviluvut:
+        name: 'kol'
+    Jarjestysluvut:
+        name: 'jarj'
+    Yksmon:
+        name: 'yksmon'
+    NominatiiviMON:
+        name: 'nommon'
+    Tilastot:
+        name: 'tilasto'
